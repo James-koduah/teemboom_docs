@@ -5,7 +5,7 @@ function PositionCommentSection(){
     const navigate = useNavigate()
     const copyScript = (arg=2)=>{
         let text
-        if (arg == 1) text = '<div id="teemboom_comments"></div>'
+        if (arg === 1) text = '<div id="teemboom_comments"></div>'
         else text = '<button id="teemboom_popup">Show comments</button>'
         navigator.clipboard.writeText(text).then(
             alert('Script copied')
