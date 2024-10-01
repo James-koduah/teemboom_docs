@@ -1,0 +1,36 @@
+.parent{
+    width: 94%;
+    padding: 5px 3%;
+    border-bottom: 1px var(--border-color) solid;
+}
+.parentHeader{
+    font-size: 3.4em;
+}
+.main{
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2%;
+    cursor: pointer;
+}
+.main:hover{
+    background: var(--border-color);
+}
+.main ion-icon{
+    font-size: 3.5em;
+}
+
+.children{
+    width: 95%;
+    padding-left: 5%;
+}
+.children .parent{
+    border: none;
+}
+.children .parentHeader{
+    font-size: 2.8em;
+}
+.children .main{
+    padding: 10px 2%;
+}

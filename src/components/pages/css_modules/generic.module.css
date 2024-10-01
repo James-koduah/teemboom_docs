@@ -1,0 +1,82 @@
+.page{
+    width: calc(100% - 30px);
+    padding: 20px 15px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.page h1{
+    font-size: 9em;
+    margin-bottom: 10px;
+}
+.page h2{
+    margin: 25px 0 10px;
+    font-size: 6em;
+}
+.page h3{
+    font-size: 4em;
+    margin: 25px 0 10px;
+}
+
+.page ul{
+    margin: 15px 0;
+}
+.page ul li{
+    margin-bottom: 10px;
+    font-size: 3.5em;
+    list-style-position: inside;
+    color: var(--text-color2)
+}
+.page ul li a:hover{
+    text-decoration: underline;
+}
+
+.page p{
+    font-size: 3.5em;
+    line-height: 160%;
+    color: var(--text-color2)
+}
+.page code{
+    font-size: 90%;
+    color: var(--orange);
+    font-family: inherit;
+}
+
+.copy_code{
+    padding: 20px 10px 15px;
+    background: #eee;
+    border-radius: 5px;
+    position: relative;
+    margin: 20px 0;
+}
+.copy_code .copy_code_button{
+    position: absolute;
+    padding: 4px 10px;
+    font-size: 2em;
+    border: none;
+    box-shadow: 1px 1px 2px 2px var(--text-color2);
+    top: 5px;
+    right: 10px;
+}
+.copy_code_scroll{
+    display: flex;
+    overflow-x: auto;
+}
+.copy_code p{
+    flex-shrink: 0;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.page .next{
+    padding: 10px 20px;
+    background: var(--purple);
+    color: #fff;
+    border: 1px var(--purple) solid;
+    border-radius: 5px;
+    font-size: 3em;
+}

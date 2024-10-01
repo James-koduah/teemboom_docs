@@ -1,0 +1,39 @@
+#top_nav{
+    width: calc(100vw - 30px);
+    height: 30px;
+    padding: 5px 15px;
+    box-shadow: 0 1px 1px 1px var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 3.3em;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 28px;
+}
+.logo p{
+    margin-left: 5px;
+}
+
+.links{
+    display: flex;
+    height: 100%;
+}
+
+.links a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    font-size: 2.8em;
+    font-weight: 600;
+}
+.links a:hover{
+    border-bottom: 2px #000 solid;
+}

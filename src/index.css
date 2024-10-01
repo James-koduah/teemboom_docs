@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --ma-bg: #f1eff1;
+    --cabin: 'cabin', 'verdana', 'helvetica';
+    --border-color: #ddd;
+    --text-color: #222;
+    --text-color2: #4f4b4e;
+    --purple: #890389;
+    --orange: rgb(230, 161, 2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--ma-bg);
+    overflow-x: hidden;
+    font-family: var(--cabin);
+    color: var(--text-color);
+    font-size: 5px;
+}
+main{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+input{
+    width: 96%;
+    padding: 0 2%;
+    border: none;
+    background-color: inherit;
+}
+input, textarea, button :focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+
+#content_page{
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 20vh;
+    transition: 1s;
+    background-color: #fff;
+}
+
+#SideNav{
+    width: 300px;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    border-right: 2px solid var(--border-color);
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+#sideNavMobile{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 4em;
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    main{
+        flex-direction: column;
+    }
+    #SideNav{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+    }
+    #sideNavPC{
+        display: none;
+    }
+    #sideNavMobile{
+        display: block;
+    }
 }
